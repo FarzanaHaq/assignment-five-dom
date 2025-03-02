@@ -33,7 +33,7 @@ for (let index = 0; index < taskButton.length; index++) {
     paragraph.innerHTML = `
           <div class="add -para px-5 mt-[20px]">
             <p class="bg-blue-100 rounded-lg p-5">
-              You have Completed ${h1Text} at ${time}
+              You have Completed the ${h1Text} at ${time}
             </p>
           </div> 
     `;
@@ -57,8 +57,18 @@ const formattedDate = date.toLocaleDateString("en-US", {
   day: "numeric",
 });
 
+const formattedDay = date.toLocaleDateString("en-US", {
+  weekday: "short"
+});
+
+
+
 const displayDate = document.getElementById("date-display");
-displayDate.innerText = formattedDate;
+displayDate.innerText = formattedDate ;
+
+const displayDay = document.getElementById("day-display");
+displayDay.innerText = formattedDay + ",";
+
 
 const colorChange = document.getElementById("color");
 colorChange.addEventListener("click", function () {

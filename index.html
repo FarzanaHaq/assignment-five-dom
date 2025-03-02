@@ -10,8 +10,19 @@
       type="text/css"
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body id="full-body" class="bg-blue-100 py-[20px]">
+  <body id="full-body" class="poppins bg-blue-100 py-[20px]">
     <header
       class="w-[1250px] mx-auto flex items-center justify-between bg-white rounded-2xl p-[20px]"
     >
@@ -48,12 +59,19 @@
               </h1>
             </div>
           </div>
-          <div id="discover"
+          <div
+            id="discover"
             class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center gap-3 py-[20px] px-[30px] rounded-xl"
           >
-            <div><img src="assets/board.png" alt="" /></div>
             <div>
-              <p class="text-[#F4F7FF] text-2xl font-medium">
+              <img
+                class="border-2 border-white border-dashed"
+                src="assets/board.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <p class="text-[#F4F7FF] text-xl font-medium">
                 Discover Something <br />
                 New Today!
               </p>
@@ -61,11 +79,15 @@
           </div>
           <div>
             <div
-              class="bg-blue-100 flex items-center gap-5 py-[46px] px-10 rounded-xl"
+              class="bg-blue-100 flex items-center gap-5 py-[33px] px-10 rounded-xl"
             >
               <div><img src="assets/calender.png" alt="" /></div>
               <div>
-                <h1 id="date-display" class="font-bold text-xl text-[rgb(0, 48, 60)]"></h1> 
+                <p id="day-display" class="text-xl font-normal"></p>
+                <h1
+                  id="date-display"
+                  class="font-bold text-xl text-[rgb(0, 48, 60)]"
+                ></h1>
               </div>
             </div>
           </div>
@@ -89,12 +111,12 @@
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -112,17 +134,18 @@
             <p
               class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
             >
-            Store the user's preference in localStorage, update CSS variables....
+              Store the user's preference in localStorage, update CSS
+              variables....
             </p>
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -145,12 +168,12 @@
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -173,12 +196,12 @@
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -201,12 +224,12 @@
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -229,12 +252,12 @@
             <div class="flex items-center justify-between mt-[27px]">
               <div>
                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
-                <p class="text-[#00303C] font-medium text-base">
+                <p class="text-[#00303C] font-medium text-sm">
                   21 March 2025
                 </p>
               </div>
               <button
-                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+                class="task-btn bg-[#3752FD] text-white font-medium text-sm rounded-lg px-5 py-2"
               >
                 Completed
               </button>
@@ -244,7 +267,7 @@
       </div>
       <div>
         <div
-          class="para-contain bg-white w-[320px] my-[20px] pt-[24px] h-[999px] rounded-2xl"
+          class="para-contain bg-white w-[300px] my-[20px] pt-[24px] h-[999px] rounded-2xl"
         >
           <div class="flex items-center justify-center gap-5">
             <img src="assets/activity.png" alt="" />
