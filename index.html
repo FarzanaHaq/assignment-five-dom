@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Five</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body id="full-body" class="bg-blue-100 py-[20px]">
+    <header
+      class="w-[1250px] mx-auto flex items-center justify-between bg-white rounded-2xl p-[20px]"
+    >
+      <div class="flex items-center gap-3">
+        <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="" />
+        <h1 class="text-3xl text-[#00303C]">
+          <span class="font-light">Dev</span
+          ><span class="font-bold">Board</span>
+        </h1>
+      </div>
+      <div class="flex items-center gap-16">
+        <div class="flex items-center gap-3">
+          <img src="assets/checkbox.png" alt="" />
+          <h1 id="com-task" class="text-[#1E1E1E] text-3xl font-bold">23</h1>
+        </div>
+        <div>
+          <img id="color" src="assets/theme-btn.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main class="w-[1250px] mx-auto flex justify-between gap-5">
+      <div class="bg-white my-[24px] rounded-2xl">
+        <div class="flex items-center justify-between p-[24px]">
+          <div
+            class="bg-blue-100 flex items-center gap-5 py-[30px] px-10 rounded-xl"
+          >
+            <div><img src="assets/checkbox.png" alt="" /></div>
+            <div>
+              <p class="text-[rgb(0, 48, 60)] text-base font-medium">
+                Task Assigned
+              </p>
+              <h1 id="task" class="font-bold text-3xl text-[rgb(0, 48, 60)]">
+                6
+              </h1>
+            </div>
+          </div>
+          <div id="discover"
+            class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center gap-3 py-[20px] px-[30px] rounded-xl"
+          >
+            <div><img src="assets/board.png" alt="" /></div>
+            <div>
+              <p class="text-[#F4F7FF] text-2xl font-medium">
+                Discover Something <br />
+                New Today!
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="bg-blue-100 flex items-center gap-5 py-[46px] px-10 rounded-xl"
+            >
+              <div><img src="assets/calender.png" alt="" /></div>
+              <div>
+                <h1 id="date-display" class="font-bold text-xl text-[rgb(0, 48, 60)]"></h1> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card collection-->
+        <div class="grid grid-cols-3 gap-3 mt-[40px] px-[20px] pb-[33px]">
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[85px] p-[5px] rounded-lg"
+            >
+              ShopEase
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[85px] p-[5px] rounded-lg"
+            >
+              ShopEase
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Add Dark Mode
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+            Store the user's preference in localStorage, update CSS variables....
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[85px] p-[5px] rounded-lg"
+            >
+              SwiftPay
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Optimize Home page
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[85px] p-[5px] rounded-lg"
+            >
+              Meta
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Add new emoji 🤲
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[113px] p-[5px] rounded-lg"
+            >
+              Google LLC
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Integrate OpenAI API
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-[20px] rounded-2xl">
+            <p
+              class="text-base font-normal bg-white text-center w-[99px] p-[5px] rounded-lg"
+            >
+              Glassdoor
+            </p>
+            <h1 class="new text-[rgb(0, 48, 60)] text-xl font-medium mt-[16px]">
+              Improve Job searching
+            </h1>
+            <p
+              class="text-[#000000] font-normal text-base mt-[16px] bg-white p-3"
+            >
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex items-center justify-between mt-[27px]">
+              <div>
+                <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                <p class="text-[#00303C] font-medium text-base">
+                  21 March 2025
+                </p>
+              </div>
+              <button
+                class="task-btn bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="para-contain bg-white w-[320px] my-[20px] pt-[24px] h-[999px] rounded-2xl"
+        >
+          <div class="flex items-center justify-center gap-5">
+            <img src="assets/activity.png" alt="" />
+            <h1 class="text-xl font-medium">Activity Log</h1>
+          </div>
+          <div class="text-center">
+            <button
+              id="clear-btn"
+              class="bg-[#3752FD] text-white font-medium text-base rounded-lg px-5 py-2 mt-[15px]"
+            >
+              Clear History
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="hello.js"></script>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Five</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-blue-100 py-[20px]">
+    <header
+      class="w-[1250px] mx-auto flex items-center justify-between bg-white rounded-2xl p-[20px]"
+    >
+      <div class="flex items-center gap-3">
+        <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="" />
+        <h1 class="text-3xl text-[#00303C]">
+          <span class="font-light">Dev</span
+          ><span class="font-bold">Board</span>
+        </h1>
+      </div>
+      <div class="">
+        <button
+          id="desk"
+          class="bg-[#3752FD] text-white font-medium text-base rounded-lg px-6 py-3"
+        >
+          Back to Desk
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1 class="text-center font-bold text-2xl my-11">Blogs</h1>
+      <div class="w-[1250px] mx-auto">
+        <div class="bg-white my-5 p-8 rounded-lg">
+          <h1 class="font-medium text-base">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <p class="mt-4 border-t-2 border-gray-400 border-dashed pt-3">
+            1. document.getElementById('elementId') to select an element with a
+            specific ID. <br />
+            2. document.getElementsByClassName('className') or
+            document.getElementsByTagName('tagName') for multiple elements.
+            <br />
+            3. document.querySelector('selector') for a single element or
+            document.querySelectorAll('selector') for multiple elements.
+          </p>
+        </div>
+        <div class="bg-white my-5 p-8 rounded-lg">
+          <h1 class="font-medium text-base">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h1>
+          <p class="mt-4 border-t-2 border-gray-400 border-dashed pt-3">
+            innerHTML: Retrieves or sets the HTML content inside an element,
+            including tags.
+
+            <br />
+            innerText: Retrieves or sets only the visible text content, ignoring
+            hidden elements and respecting CSS styling.
+
+            <br />
+            textContent: Retrieves or sets all text content, including hidden
+            elements, without interpreting HTML tags.
+          </p>
+        </div>
+        <div class="bg-white my-5 p-8 rounded-lg">
+          <h1 class="font-medium text-base">
+            Question-3: What is event delegation in the DOM?
+          </h1>
+          <p class="mt-4 border-t-2 border-gray-400 border-dashed pt-3">
+            Event delegation is a technique where you attach a single event
+            listener to a parent element to manage events for all its child
+            elements. This leverages event bubbling, allowing you to handle
+            events efficiently, especially for dynamically added elements,
+            reducing the need for multiple event listeners.
+          </p>
+        </div>
+        <div class="bg-white my-5 p-8 rounded-lg">
+          <h1 class="font-medium text-base">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <p class="mt-4 border-t-2 border-gray-400 border-dashed pt-3">
+            Event bubbling is a behavior in the DOM where an event triggered on
+            a child element propagates upward through its ancestor elements in
+            the hierarchy. This allows parent elements to handle events
+            originating from their children, enabling techniques like event
+            delegation.
+          </p>
+        </div>
+        <div class="bg-white my-5 p-8 rounded-lg">
+          <h1 class="font-medium text-base">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+          <p class="mt-4 border-t-2 border-gray-400 border-dashed pt-3">
+            Create: Use document.createElement('tagName') to create a new
+            element.
+            <br />
+            Add: Use parentElement.appendChild(newElement) or
+            parentElement.insertBefore(newElement, referenceElement) to add the
+            element to the DOM.
+            <br />
+            Remove: Use parentElement.removeChild(childElement) to remove an
+            element from the DOM.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const redirectTwo = document.getElementById("desk");
+    redirectTwo.addEventListener("click", function () {
+      window.location.href = "./index.html";
+    });
+  </script>
+</html>
